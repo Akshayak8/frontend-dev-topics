@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>
+Create element
+</title>
+</head>
+<body>
+<h1 id="demo">  para graph Element is created below</h1>
+<script>
+function create()
+{
+ const para=document.createElement("p");
+ para.innerText="this is a paragraph created";
+//append to body
+document.body.appendChild(para);
+}
+function removeelement()
+{
+const ele=document.getElementById("demo");
+ele.remove();
+}
+</script>
+<input type="submit" onclick="create()" value="create">
+<input type="submit" onclick="removeelement()" value="remove">
+</body>
+</html>

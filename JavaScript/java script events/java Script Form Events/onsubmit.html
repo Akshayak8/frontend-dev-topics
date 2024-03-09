@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function Input_a() {
+fnm = document.forms[0].fnm.value;
+alert("Hi " + fnm + "! This Page will get redirected to www.mrec.ac.in");
+}
+</script>
+</head>
+<body>
+<form onsubmit="Input_a()" action="https://www.mrec.ac.in/">
+Enter your name: <input id="fnm" type="text" size="20">
+<input type="submit">
+</form>
+</body>
+</html>

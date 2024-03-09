@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+<title> This is an example for mouse events </title>
+<script>
+function funOver(e) {
+px = e.clientX;
+py = e.clientY;
+pxy = " x and y Coordinates = (" + px + "," + py + ")";
+document.getElementById("hid").innerHTML = pxy
+}
+</script>
+</head>
+<body>
+<p>Mouse over the button, and get mouse pointer coordinates. </p>
+<button id="bid" onmouseover = "funOver(event)" 
+onmouseout= "funOut(event)"> 
+Move here to generate mouse move event. </button>
+<h3 id="hid"></h3>
+</body>
+</html>

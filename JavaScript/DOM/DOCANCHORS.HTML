@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Finding HTML Elements Using document.anchors</h2>
+
+<a name="html"  src="url" >CSE</a><br>
+<a name="css">IOT</a><br>
+<a name="xml"> DS</a><br>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+"Number of anchors are: " + document.anchors.length;
+document.write(document.anchors.length)
+</script>
+
+
+</body>
+</html>
