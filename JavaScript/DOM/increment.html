@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>counter:<span id="counter">0</span></h2>
+      <button id="button1">Increment</button>
+      <button id="button2">Decrement</button>
+    </div>
+    <script>
+      const button1 = document.getElementById("button1");
+      const button2 = document.getElementById("button2");
+      const counter = document.getElementById("counter");
+      let count = 0;
+      button1.addEventListener("click", () => {
+        count++;
+        counter.innerHTML = count;
+      });
+      button2.addEventListener("click", () => {
+        count--;
+        counter.innerHTML = count;
+      });
+    </script>
+  </body>
+</html>
